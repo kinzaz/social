@@ -12,10 +12,9 @@ import (
 )
 
 type MailGunMailer struct {
-	fromEmail   string
-	apiKey      string
-	sandboxMail string
-	client      *mailgun.MailgunImpl
+	fromEmail string
+	apiKey    string
+	client    *mailgun.MailgunImpl
 }
 
 func NewMailGun(apiKey, fromEmail string) *MailGunMailer {
