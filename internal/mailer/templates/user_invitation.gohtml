@@ -1,0 +1,17 @@
+{{define "subject"}}
+Finish Registration with GopherSocial
+{{end}}
+
+{{define "body"}}
+<!doctype html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <p>Hi, {{.Username}}</p>
+    <p>Finish your registration!</p>
+    <p><a href="{{.ActivationURL}}">{{.ActivationURL}}</a></p>
+  </body>
+</html>
+{{end}}
